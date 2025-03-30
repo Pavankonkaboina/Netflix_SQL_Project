@@ -206,7 +206,7 @@ from (
             when description ILIKE '%kill%' OR description ilike '%violence%' then 'Bad'
             else 'Good'
         end as category
-    from netflix
+    from netflix_shows
 ) as categorized_content
 group by category;
 ```
